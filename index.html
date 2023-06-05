@@ -17,34 +17,6 @@
         font-size: 36px;
         text-transform: uppercase;
         letter-spacing: 3px;
-        animation: rainbow 10s linear infinite;
-      }
-
-      @keyframes rainbow {
-        0% {
-          color: red;
-        }
-        14% {
-          color: orange;
-        }
-        28% {
-          color: yellow;
-        }
-        42% {
-          color: green;
-        }
-        57% {
-          color: blue;
-        }
-        71% {
-          color: indigo;
-        }
-        85% {
-          color: violet;
-        }
-        100% {
-          color: red;
-        }
       }
 
       .content {
@@ -52,76 +24,12 @@
         margin: 0 auto;
         text-align: center;
       }
-
-      .links {
-        margin-top: 20px;
-      }
-
-      .links a {
-        display: inline-block;
-        margin-right: 10px;
-        color: #333;
-        text-decoration: none;
-        border: 2px solid #333;
-        padding: 8px 12px;
-        border-radius: 5px;
-        transition: transform 0.3s ease;
-      }
-
-      .links a:hover {
-        transform: rotate(360deg);
-        background-color: #333;
-        color: #fff;
-      }
-
-      .emoji {
-        position: absolute;
-        animation: shake 0.8s infinite;
-      }
-
-      @keyframes shake {
-        0% {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-        10% {
-          transform: translate(-50%, -50%) rotate(-10deg);
-        }
-        20% {
-          transform: translate(-50%, -50%) rotate(10deg);
-        }
-        30% {
-          transform: translate(-50%, -50%) rotate(-10deg);
-        }
-        40% {
-          transform: translate(-50%, -50%) rotate(10deg);
-        }
-        50% {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-        100% {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-      }
-
-      .loans {
-        margin-top: 50px;
-        text-align: center;
-      }
-
-      .loans h2 {
-        font-size: 24px;
-      }
-
-      .loans p {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
     </style>
   </head>
   <body>
     <div class="content">
       <h1>Hudhayfa Nazoordeen</h1>
-      <p>Waterloo Combinatorics & Optimization</p>
+      <p>Waterloo Combinatorics & Optimization 2025</p>
 
       <div class="links">
         <a
@@ -132,66 +40,7 @@
         <a href="https://www.linkedin.com/in/hudzah/">LinkedIn</a>
       </div>
 
-      <div class="loans">
-        <h2>Loans</h2>
-        <p>Looking for a loan? Contact us for personalized assistance.</p>
-        <p>
-          Email: info@example.com
-          <br />
-          Phone: 123-456-7890
-        </p>
-      </div>
-
       <div id="emoji-container" class="emoji-container"></div>
     </div>
-
-    <script>
-      function createEmoji() {
-        var emoji = document.createElement("span");
-        emoji.innerHTML = getRandomEmoji();
-        emoji.classList.add("emoji");
-        var x = Math.random() * (window.innerWidth - 30);
-        var y = Math.random() * (window.innerHeight - 30);
-        emoji.style.left = x + "px";
-        emoji.style.top = y + "px";
-        document.getElementById("emoji-container").appendChild(emoji);
-      }
-
-      function getRandomEmoji() {
-        var emojis = [
-          "😀",
-          "😂",
-          "😍",
-          "🤔",
-          "🤣",
-          "😎",
-          "🥳",
-          "😜",
-          "🙌",
-          "🎉",
-          "🔥",
-          "💯",
-          "🌟",
-          "🍕",
-          "🌈",
-          "🎸",
-          "🚀",
-          "🦄",
-          "🍦",
-          "📚",
-          "🌺",
-          "🍩",
-          "⚡️",
-          "🍔",
-          "💡",
-        ];
-        return emojis[Math.floor(Math.random() * emojis.length)];
-      }
-
-      // Create 10 random emojis
-      for (var i = 0; i < 10; i++) {
-        createEmoji();
-      }
-    </script>
   </body>
 </html>
